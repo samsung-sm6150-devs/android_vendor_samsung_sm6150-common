@@ -7,9 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/bin/lpm:$(TARGET_COPY_OUT_SYSTEM)/bin/lpm \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFacePreProcessing.camera.samsung.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacePreProcessing.camera.samsung.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libFacialStickerEngine.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFacialStickerEngine.arcsoft.so \
     vendor/samsung/sm6150-common/proprietary/lib64/libmaet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmaet.so \
     vendor/samsung/sm6150-common/proprietary/lib64/libsxqk_skia.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsxqk_skia.so \
     vendor/samsung/sm6150-common/proprietary/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
@@ -21,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/factory.ssc:$(TARGET_COPY_OUT_VENDOR)/bin/factory.ssc \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
@@ -29,293 +25,35 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/android.hardware.health@2.1-service-samsung:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service-samsung \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/android.hardware.usb@1.1-service.wahoo:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.1-service.wahoo \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/nxp.android.hardware.nfc@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/nxp.android.hardware.nfc@1.1-service \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.thermal@1.0-service \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/npu_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/npu_launcher \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
-    vendor/samsung/sm6150-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/samsung/sm6150-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/samsung/sm6150-common/proprietary/vendor/etc/a2dpsink_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dpsink_audio_policy_configuration.xml \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ARO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ARO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BKD/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BKD/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BNG/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BNG/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/BVO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/BVO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CHO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CHO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/COO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/COO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/CTI/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/CTI/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/EON/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/EON/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/GTO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/GTO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/INS/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/INS/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/MXO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/MXO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NBP/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NBP/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/NPL/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/NPL/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PEO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PEO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/PSN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/PSN/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLI/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLI/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/SLK/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/SLK/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/TPA/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/TPA/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UFN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UFN/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UPO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UPO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/UYO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/UYO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTA/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTA/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTM/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTM/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTO/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTO/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZTR/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZTR/workspaceFile.qwsp \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Bluetooth_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Codec_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/General_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Global_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Handset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Hdmi_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Headset_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/Speaker_cal.acdb \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/audconf/ZVV/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/ZVV/workspaceFile.qwsp \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/android.hardware.health@2.1-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service-samsung.rc \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service.wahoo.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.1-service.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -325,55 +63,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/locale/plmn_delta_zh-rCN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rCN.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/locale/plmn_delta_zh-rHK.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rHK.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/locale/plmn_delta_zh-rTW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_zh-rTW.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/default_sensors.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_2.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_ak991x_mst_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_ak991x_mst_2.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_icm4x6xx_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_icm4x6xx_4.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_power_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3a6x_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_stk3x3x_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_tcs3407_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_tcs3407_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sdmmagpie_vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sdmmagpie_vcnl36811_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_hw_revision.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_hw_revision.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/stk3a6x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3a6x_0.json \
-    vendor/samsung/sm6150-common/proprietary/vendor/etc/sensors/config/vcnl36811_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/vcnl36811_0.json \
     vendor/samsung/sm6150-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/samsung/sm6150-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/samsung/sm6150-common/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
@@ -396,79 +88,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/firmware/wlan/qca_cld/bdwlan.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/bdwlan.bin \
     vendor/samsung/sm6150-common/proprietary/vendor/firmware/wlan/qca_cld/grippower.info:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/grippower.info \
     vendor/samsung/sm6150-common/proprietary/vendor/firmware/wlan/qca_cld/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/regdb.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/android.hardware.camera.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.5-legacy.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.2-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.3-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.4-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@3.5-impl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.qti.eeprom.n24s64b_imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.n24s64b_imx616.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.hi1336.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.hi1336.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.imx682.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.imx682.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensor.s5kgw1s.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensor.s5kgw1s.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx682.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.depth.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.eisv3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.stich.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.bayercheck.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.bayercheck.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.bayerfuse.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.bayerfuse.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.remosaic.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_capture.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_preview.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_recording.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.samsung.node.uniplugin_vdis.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.aec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.af.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.awb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/com.wrapper.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.wrapper.stats.pdlib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/libMOTION.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libMOTION.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libdepthmapwrapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libmmcamera_cac3.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/f_dual_calibration.bin \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/uw_dual_calibration.bin \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/w_dual_calibration.bin \
@@ -481,15 +105,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/audio.a2dpsink.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.a2dpsink.default.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sm6150.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/audio.sec_primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.sec_primary.default.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.samsung.chi.override.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
@@ -550,8 +175,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib/libbluetooth_a2dpsink_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_a2dpsink_session.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
@@ -569,28 +193,23 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libchiss3alogdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchiss3alogdebug.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcom.qti.chinodeutils.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_common.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvp_stub.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvpcpuRev_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_optical_zoom_control.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_image.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcam_refocus_video.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcapture.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
@@ -600,7 +219,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_in_system_lib.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
@@ -611,8 +229,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypervintf.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libjpegQtable_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegQtable_interface.so \
@@ -632,40 +248,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblow_light_hdr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprofileparamstorage.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqcwrappercommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcwrappercommon.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqfp_sensortest.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib/librecordalive.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
@@ -683,16 +281,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec_semRil.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudiocoreutils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecaudioinfo.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecnativefeature.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecril-client.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmartfocus_interface.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsmartfocusengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmartfocusengine.so \
@@ -709,7 +303,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libswldc_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswldc_capture_core.camera.samsung.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynergy_loc_api.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
@@ -722,7 +315,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
@@ -742,8 +334,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.grip.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudioeffectoffload.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiosaplus_sec.so \
@@ -775,8 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.cvp@1.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
@@ -791,72 +379,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.audio@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth@2.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.gnss@2.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.4-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4-legacy.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/android.hardware.camera.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.5-legacy.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera.device@3.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.2-impl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera.device@3.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.3-impl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera.device@3.4-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.4-impl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera.device@3.5-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@3.5-impl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.qti.eeprom.n24s64b_imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.n24s64b_imx616.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.gc5035_macro.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.hi1336.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.hi1336.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.imx616.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx616.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.imx682.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.imx682.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensor.s5kgw1s.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensor.s5kgw1s.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_new.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1s_old.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_hynix_hi1336.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_sony_imx616_full.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgw1s.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx682.bin \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.bayercheck.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.bayercheck.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.bayerfuse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.bayerfuse.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_bokeh.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.capture_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.capture_fusion.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.realtimebokeh.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.remosaic.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.samsung.node.smooth_transition.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.aec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.af.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.awb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/com.wrapper.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.wrapper.stats.pdlib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libmmcamera_cac3.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
@@ -867,8 +394,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/audio.a2dpsink.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.a2dpsink.default.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/audio.sec_primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.sec_primary.default.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.samsung.chi.override.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.mdfpp.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
@@ -876,6 +403,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
@@ -932,8 +460,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbluetooth_a2dpsink_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_a2dpsink_session.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
@@ -952,25 +479,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libchiss3alogdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchiss3alogdebug.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcvp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcvp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_stub.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdualcam_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_image.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libdualcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcapture.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libengmode_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode_client.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
@@ -979,7 +500,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_in_system_lib.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
@@ -996,7 +516,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
@@ -1017,53 +536,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/liblow_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblow_light_hdr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnetfilter_conntrack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetfilter_conntrack.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnfnetlink.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnfnetlink.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprofileparamstorage.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqcwrappercommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcwrappercommon.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp_sensortest.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_helper.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmiextservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiextservices.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmiservices-sem-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices-sem-ext.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libreffeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libreffeature.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_daemon.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libril_sem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril_sem.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
@@ -1078,17 +573,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsec_semRil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_semRil.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecnativefeature.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecril-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecril-client.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsmartfocus_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocus_interface.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsmartfocusengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmartfocusengine.so \
@@ -1108,7 +598,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libswldc_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswldc_capture_core.camera.samsung.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
@@ -1117,16 +606,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvdis_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_core.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvdis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvdis_interface.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/nfc_nci_nxp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_nxp.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/sensors.grip.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.grip.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiosaplus_sec.so \
@@ -1161,8 +646,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cvp@1.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.connection@1.1.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
@@ -1177,16 +660,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.audio@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
+    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth@2.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.health@2.0.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.1.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel@2.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.0.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.1.so \
-    vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio@2.2.so \
     vendor/samsung/sm6150-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 PRODUCT_PACKAGES += \
