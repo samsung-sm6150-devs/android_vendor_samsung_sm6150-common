@@ -678,5 +678,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.voiceprint-V1.0-java \
     android.hardware.gnss@2.1-service-qti \
     manifest_android.hardware.drm@1.3-service.clearkey \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    vendor.samsung.hardware.thermal@1.0-manifest
+    manifest_android.hardware.drm@1.3-service.widevine
